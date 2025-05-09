@@ -91,7 +91,7 @@ app.post('/api/recommendations', (req, res) => {
   
   try {
     // Run Python script with input values
-    const pythonProcess = spawn('python', [
+    const pythonProcess = spawn('python3', [
       'workout_recommendation.py',
       '--age', age.toString(),
       '--height', height.toString(),
